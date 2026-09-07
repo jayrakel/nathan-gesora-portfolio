@@ -29,6 +29,8 @@ export const skillGroups: SkillGroup[] = [
       'PostgreSQL',
       'MySQL',
       'Redis',
+      'NoSQL',
+      'SQL'
     ],
   },
 
