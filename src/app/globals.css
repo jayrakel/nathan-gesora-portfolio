@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 248 250 252;
+    --foreground: 15 23 42;
+
+    --surface: 255 255 255;
+    --surface-muted: 241 245 249;
+
+    --border: 226 232 240;
+
+    --primary: 37 99 235;
+    --primary-foreground: 255 255 255;
+
+    --muted: 71 85 105;
+
+    --radius-sm: 0.375rem;
+    --radius-md: 0.625rem;
+    --radius-lg: 0.875rem;
+
+    --content-width: 72rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    /* Set explicitly to avoid iOS Safari rendering bugs */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  /* Layout Primitives */
+  .container {
+    @apply mx-auto w-full max-w-[var(--content-width)] px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-16 sm:py-24;
+  }
+
+  .section-heading {
+    @apply max-w-3xl mb-12 sm:mb-16;
+  }
+
+  .section-eyebrow {
+    @apply inline-block mb-3 text-primary text-sm font-mono font-bold tracking-widest uppercase;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-foreground leading-tight mb-6;
+  }
+
+  .section-description {
+    @apply text-muted text-lg sm:text-xl leading-relaxed max-w-2xl;
+  }
+
+  /* Card primitive */
+  .card {
+    @apply border border-border rounded-lg bg-surface shadow-sm transition-all duration-300;
+  }
+  
+  .card-hover {
+    @apply hover:shadow-md hover:border-primary/30 hover:-translate-y-1;
+  }
+
+  /* Interactive Elements */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 h-10 px-6 py-2;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm hover:shadow;
+  }
+
+  .btn-outline {
+    @apply border border-border bg-transparent hover:bg-surface-muted hover:text-foreground;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a,
+  button {
+    transition:
+      color 150ms ease,
+      background-color 150ms ease,
+      border-color 150ms ease,
+      opacity 150ms ease,
+      transform 150ms ease;
+  }
+}
