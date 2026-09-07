@@ -3,18 +3,20 @@ import type { ExperienceEntry } from '@/lib/types';
 export const experience: ExperienceEntry[] = [
   {
     organization: 'Better-Link Ventures Limited',
-    role: 'Software Developer & System Administrator',
-    startDate: 'TODO',
+    role: 'IT Administrator & Software Developer',
+    startDate: '2023',
     endDate: 'present',
     summary:
-      'Built, deployed and currently administer a SACCO management system supporting financial operations, loan management and member records.',
+      'IT Administrator and Full-Stack Software Developer responsible for enterprise application development, IT infrastructure administration, database management, networking, technical support, and system deployment.',
     highlights: [
-      'Designed and built the SACCO management system using Spring Boot, React, PostgreSQL and Redis',
-      'Implemented loan disbursement and arrears calculation workflows',
-      'Developed member statements, reporting functionality and financial data workflows',
-      'Migrated historical loan and payment records into the system using Python migration scripts',
-      'Built and configured a self-hosted server used to deploy and operate the SACCO management system',
-      'Administer the application and its underlying infrastructure, including deployments, services, database and system operations',
+      'Led the design, development, testing, deployment, and ongoing enhancement of the SACCO Management System.',
+      'Develop and maintain full-stack enterprise applications using Java, Spring Boot, React, TypeScript, PostgreSQL, and RESTful APIs.',
+      'Design and implement new system modules, troubleshoot application issues, and continuously improve system functionality based on operational requirements.',
+      'Administer PostgreSQL databases, including performance optimization, backup, recovery, and data integrity management.',
+      'Deploy, configure, and maintain applications and services using Docker in Linux environments.',
+      'Configure and troubleshoot network infrastructure, including routers, switches, VPN connectivity, and office networking equipment.',
+      'Provide technical support for hardware, software, printers, biometric devices, and email accounts.',
+      'Conduct user training and provide technical guidance to ensure effective and secure use of organizational systems.',
     ],
   },
 ];

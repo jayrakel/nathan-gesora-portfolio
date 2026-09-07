@@ -1,11 +1,10 @@
 import type { EducationEntry } from '@/lib/types';
 
-// TODO: confirm exact dates.
 export const education: EducationEntry[] = [
   {
-    institution: 'Nairobi National Polytechnic',
+    institution: 'Nairobi Technical Training Institute',
     credential: 'Diploma in Information Communication Technology (ICT)',
-    startDate: '2020-09-01',
-    endDate: '2023-12-08',
+    startDate: '2020',
+    endDate: '2023',
   },
 ];

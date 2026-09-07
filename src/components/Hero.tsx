@@ -40,7 +40,7 @@ export default function Hero() {
             </Link>
 
             <a
-              href={profile.cvPath} //TODO
+              href={profile.cvPath}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline h-12 px-8 text-base"
@@ -50,7 +50,7 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-col gap-2 text-sm text-muted sm:flex-row sm:items-center sm:gap-4">
-            <span>{profile.location}</span> {/* TODO */}
+            <span>{profile.location}</span>
 
             <span
               aria-hidden="true"

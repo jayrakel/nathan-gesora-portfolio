@@ -2,38 +2,33 @@ import type { ServiceOffering } from '@/lib/types';
 
 export const services: ServiceOffering[] = [
   {
-    title: 'Web Application Development',
+    title: 'Full-Stack Software Development',
     description:
-      'Full-stack web applications, from data modeling and backend development to deployed user interfaces.',
+      'Design and development of practical web applications using Java, Spring Boot, React, TypeScript, PostgreSQL, and RESTful APIs.',
   },
-
   {
-    title: 'Business Management Systems',
+    title: 'Enterprise Business Systems',
     description:
-      'Custom systems for domain-specific workflows such as SACCO and finance, education, and e-commerce.',
+      'Development and enhancement of business systems that digitize manual processes, centralize records, and improve operational efficiency.',
   },
-
   {
-    title: 'API Development & Integration',
+    title: 'REST API Development & Integration',
     description:
-      'REST API design, backend services, and integration with third-party platforms and services.',
+      'Design and implementation of secure RESTful APIs and integration with external services and business platforms.',
   },
-
   {
-    title: 'Database Design & Development',
+    title: 'Database Design & Management',
     description:
-      'Database schema design, migrations, queries, and data-layer development using PostgreSQL, MySQL, and Redis.',
+      'Design, development, administration, backup, recovery, and optimization of relational databases including PostgreSQL and MySQL.',
   },
-
   {
-    title: 'System Administration & Deployment',
+    title: 'IT Infrastructure Administration',
     description:
-      'Linux server administration, Docker-based deployments, Nginx configuration, infrastructure setup, and ongoing application operations.',
+      'Administration and troubleshooting of Linux and Windows environments, servers, Docker deployments, networking, and organizational IT infrastructure.',
   },
-
   {
-    title: 'Technical Consulting',
+    title: 'Technical Support & Troubleshooting',
     description:
-      'Practical guidance on software architecture, technology choices, database design, and implementation approaches.',
+      'Technical support for hardware, software, printers, biometric systems, user accounts, networking equipment, and day-to-day IT issues.',
   },
 ];
