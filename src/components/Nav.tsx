@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
@@ -76,10 +78,19 @@ export default function Nav() {
         {/* Logo */}
         <Link
           href="/"
-          className="font-mono text-xl font-bold tracking-tight text-primary"
+          className="flex items-center gap-3 font-mono text-xl font-bold tracking-tight text-primary transition-opacity hover:opacity-80"
           aria-label={`${profile.name} home`}
         >
-          {profile.name.split(' ')[0]}.
+          <div className="relative h-9 w-9 overflow-hidden rounded-full border-2 border-primary/20 bg-surface-muted">
+            <Image
+              src="/profile.jpg"
+              alt={profile.name}
+              fill
+              className="object-cover"
+              sizes="36px"
+            />
+          </div>
+          <span>{profile.name.split(' ')[0]}.</span>
         </Link>
 
         {/* Desktop navigation */}

@@ -16,11 +16,11 @@ export default function About() {
           <div className="lg:col-span-7">
             <div className="space-y-6 text-lg leading-relaxed text-muted">
               <p>
-                I&apos;m a software developer and ICT professional focused on
-                building practical digital systems for real-world business
-                needs. My work spans backend development, frontend
-                applications, databases, API integrations, and system
-                deployment.
+                I&apos;m an IT Administrator and Full-Stack Software Developer
+                focused on building practical digital systems for real-world
+                business needs. My work spans enterprise application
+                development, databases, REST APIs, system integration, and
+                software deployment.
               </p>
 
               <p>
@@ -32,10 +32,11 @@ export default function About() {
               </p>
 
               <p>
-                My experience also extends beyond writing application code. I
-                work with Linux, Docker, databases, networking, and deployment
-                infrastructure, allowing me to take software from development
-                through deployment and ongoing operation.
+                My experience also extends to IT infrastructure and system
+                administration. I work with Windows and Linux environments,
+                Docker, databases, networking, deployment infrastructure, and
+                technical support, allowing me to take software from
+                development through deployment and ongoing operation.
               </p>
 
               <p>

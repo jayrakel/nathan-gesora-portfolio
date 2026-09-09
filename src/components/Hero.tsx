@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="container relative z-10">
         <div className="max-w-4xl">
           <p className="section-eyebrow">
-            Software Developer · ICT Professional
+            IT Administrator • Full-Stack Software Developer
           </p>
 
           <h1 className="mb-6 text-5xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-6xl md:text-7xl">

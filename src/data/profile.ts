@@ -2,7 +2,7 @@ import type { Profile } from '@/lib/types';
 
 export const profile: Profile = {
   name: 'Nathan Michira Gesora',
-  title: 'Software Developer & ICT Professional',
+  title: 'IT Administrator & Full-Stack Software Developer',
   statement:
     'IT Administrator and Full-Stack Software Developer with experience designing, developing, deploying, and maintaining enterprise applications and IT infrastructure. I build practical business solutions across software development, databases, APIs, Linux and Windows administration, networking, and system integration, with a focus on solving operational problems and improving organizational efficiency.',
   location: 'Nairobi, Kenya',

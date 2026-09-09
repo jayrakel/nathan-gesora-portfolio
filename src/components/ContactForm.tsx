@@ -23,7 +23,7 @@ export default function ContactForm() {
 
   const formRef = useRef<HTMLFormElement>(null);
 
-  const validateForm = (formData: FormData) => {
+  function validateForm(formData: FormData) {
     const name = String(formData.get('name') ?? '').trim();
     const email = String(formData.get('email') ?? '').trim();
     const message = String(formData.get('message') ?? '').trim();
@@ -57,15 +57,12 @@ export default function ContactForm() {
     setErrors(newErrors);
 
     return isValid;
-  };
+  }
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     const formData = new FormData(event.currentTarget);
-
-    // Honeypot: bots that fill this field are silently treated as successful.
-    const honeypot = String(formData.get('_gotcha') ?? '');
 
     if (!validateForm(formData)) {
       return;
@@ -122,8 +119,8 @@ export default function ContactForm() {
 
               <p className="section-description max-w-md">
                 I&apos;m currently open to new opportunities. Whether you have
-                a question, a project in mind, or just want to say hello,
-                feel free to get in touch.
+                a question, a project in mind, or just want to say hello, feel
+                free to get in touch.
               </p>
             </div>
 
@@ -260,9 +257,8 @@ export default function ContactForm() {
                     name="name"
                     disabled={status === 'sending'}
                     autoComplete="name"
-                    className={`w-full rounded-md border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50 ${
-                      errors.name ? 'border-red-500' : 'border-border'
-                    }`}
+                    className={`w-full rounded-md border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50 ${errors.name ? 'border-red-500' : 'border-border'
+                      }`}
                     placeholder="Jane Doe"
                     aria-invalid={Boolean(errors.name)}
                     aria-describedby={
@@ -295,9 +291,8 @@ export default function ContactForm() {
                     name="email"
                     disabled={status === 'sending'}
                     autoComplete="email"
-                    className={`w-full rounded-md border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50 ${
-                      errors.email ? 'border-red-500' : 'border-border'
-                    }`}
+                    className={`w-full rounded-md border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50 ${errors.email ? 'border-red-500' : 'border-border'
+                      }`}
                     placeholder="jane@example.com"
                     aria-invalid={Boolean(errors.email)}
                     aria-describedby={
@@ -329,9 +324,8 @@ export default function ContactForm() {
                     name="message"
                     rows={4}
                     disabled={status === 'sending'}
-                    className={`w-full resize-y rounded-md border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50 ${
-                      errors.message ? 'border-red-500' : 'border-border'
-                    }`}
+                    className={`w-full resize-y rounded-md border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50 ${errors.message ? 'border-red-500' : 'border-border'
+                      }`}
                     placeholder="How can I help you?"
                     aria-invalid={Boolean(errors.message)}
                     aria-describedby={
