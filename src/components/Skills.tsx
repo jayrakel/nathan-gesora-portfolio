@@ -1,4 +1,13 @@
 import { skillGroups } from '@/data/skills';
+import { Server, Layout, Database, Terminal, Cog } from 'lucide-react';
+
+const iconMap: Record<string, React.ReactNode> = {
+  'Backend': <Server className="h-6 w-6 text-primary" />,
+  'Frontend': <Layout className="h-6 w-6 text-primary" />,
+  'Databases & Data': <Database className="h-6 w-6 text-primary" />,
+  'DevOps & Infrastructure': <Terminal className="h-6 w-6 text-primary" />,
+  'Engineering': <Cog className="h-6 w-6 text-primary" />,
+};
 
 export default function Skills() {
   return (
@@ -22,9 +31,12 @@ export default function Skills() {
               key={group.category}
               className="card card-hover p-6 md:p-8"
             >
-              <h4 className="mb-6 text-xl font-bold text-foreground">
-                {group.category}
-              </h4>
+              <div className="mb-6 flex items-center gap-3">
+                {iconMap[group.category]}
+                <h4 className="text-xl font-bold text-foreground">
+                  {group.category}
+                </h4>
+              </div>
 
               <ul className="flex flex-wrap gap-2">
                 {group.items.map((item) => (
