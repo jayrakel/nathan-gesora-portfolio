@@ -32,7 +32,7 @@ export const projects: Project[] = [
       'Self-hosted deployment infrastructure',
       'Ongoing system administration and operations',
     ],
-    images: [],
+    images: ['/sacco-project.jpg'],
     confidential: true,
     featured: true,
     hasDetailPage: true,
