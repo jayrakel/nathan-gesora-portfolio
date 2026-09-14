@@ -32,7 +32,14 @@ export const projects: Project[] = [
       'Self-hosted deployment infrastructure',
       'Ongoing system administration and operations',
     ],
-    images: ['/sacco-project.jpg'],
+    images: [
+      {
+        src: '/sacco-project.jpg',
+        alt: 'SACCO Management System Dashboard',
+        width: 1200,
+        height: 675,
+      }
+    ],
     confidential: true,
     featured: true,
     hasDetailPage: true,
