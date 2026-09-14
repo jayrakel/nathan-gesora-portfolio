@@ -46,6 +46,7 @@ export interface SkillGroup {
 
 export interface ExperienceEntry {
   organization: string;
+  url?: string;
   role: string;
   startDate: string; // 'YYYY-MM'
   endDate: string | 'present';

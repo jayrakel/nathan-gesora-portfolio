@@ -34,7 +34,18 @@ export default function Experience() {
                   </h4>
 
                   <p className="text-lg font-medium text-primary">
-                    {job.organization}
+                    {job.url ? (
+                      <a
+                        href={job.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="transition-colors hover:text-primary/80 hover:underline underline-offset-4"
+                      >
+                        {job.organization}
+                      </a>
+                    ) : (
+                      job.organization
+                    )}
                   </p>
                 </div>
 

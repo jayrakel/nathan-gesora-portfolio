@@ -3,6 +3,7 @@ import type { ExperienceEntry } from '@/lib/types';
 export const experience: ExperienceEntry[] = [
   {
     organization: 'Better-Link Ventures Limited',
+    url: 'https://betterlinkventureslimited.co.ke',
     role: 'IT Administrator & Software Developer',
     startDate: '2023',
     endDate: 'present',
