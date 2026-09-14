@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="container relative z-10">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Left Column: Text & Intro */}
-          <div className="max-w-2xl">
+          <div className="max-w-2xl min-w-0">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface-muted px-4 py-1.5 mb-6">
               <div className="h-2 w-2 rounded-full bg-primary" />
               <span className="text-xs font-medium tracking-wide text-foreground">
@@ -25,9 +25,9 @@ export default function Hero() {
               </span>
             </div>
 
-            <h1 className="mb-6 text-5xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-5xl xl:text-6xl">
+            <h1 className="mb-6 text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-5xl xl:text-6xl">
               {profile.name}.
-              <span className="block mt-2 text-muted text-4xl sm:text-5xl lg:text-4xl xl:text-5xl">
+              <span className="block mt-2 text-muted text-3xl sm:text-4xl lg:text-3xl xl:text-4xl">
                 {profile.title}.
               </span>
             </h1>
@@ -74,7 +74,7 @@ export default function Hero() {
           </div>
 
           {/* Right Column: Full-Stack Visual */}
-          <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
+          <div className="relative mx-auto w-full max-w-lg lg:max-w-none min-w-0 mt-8 lg:mt-0">
             
             {/* Decorative background blur */}
             <div className="absolute -inset-4 z-0 rounded-3xl bg-primary/10 blur-2xl filter" />
@@ -94,7 +94,7 @@ export default function Hero() {
               </div>
               
               {/* Editor Content */}
-              <div className="p-4 sm:p-6 text-sm font-mono leading-relaxed text-gray-300 overflow-x-auto">
+              <div className="p-3 sm:p-6 text-xs sm:text-sm font-mono leading-relaxed text-gray-300 overflow-x-auto">
                 <div className="flex">
                   <span className="w-8 shrink-0 select-none text-gray-600">1</span>
                   <span className="whitespace-nowrap"><span className="text-[#e5c07b]">@RestController</span></span>
