@@ -17,16 +17,12 @@ export default function About() {
             
             {/* Profile Photo Wrapper */}
             <div className="relative aspect-square max-w-sm overflow-hidden rounded-2xl bg-surface-muted border border-border/50 shadow-sm">
-              {/* Replace the src below with your actual image path (e.g., /me.jpg) */}
-              <div className="absolute inset-0 flex items-center justify-center text-muted font-mono text-sm">
-                [Profile Photo Placeholder]
-              </div>
-              {/* <Image 
-                src="/profile-photo.jpg" 
-                alt="Nathan Michira Gesora" 
+              <Image 
+                src="/profile.jpg" 
+                alt="Profile Photo" 
                 fill 
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
-              /> */}
+              />
             </div>
           </div>
 
