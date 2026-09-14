@@ -20,14 +20,14 @@ export default function ProjectCard({
   return (
     <article className="card card-hover group flex h-full flex-col overflow-hidden">
       {/* Project visual */}
-      <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-border bg-surface-muted">
+      <div className="relative aspect-video w-full overflow-hidden border-b border-border bg-surface-muted">
         {hasImages ? (
           <Image
             src={project.images[0].src}
             alt={project.images[0].alt}
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
           <div
